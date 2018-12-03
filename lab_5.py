@@ -1,3 +1,9 @@
+# Lab 5 option B : Min-Heap
+# Name: Jose Lujan
+# ID: 80572649
+# class: cs2302
+# class time 10:30-11:50
+
 class Heap:
     def __init__(self):
         self.heap_array = []
@@ -81,7 +87,7 @@ def create_list_from_file(file):
     return list
 
 
-def heap_sort(list):
+def sort_heap(list):
     heap = Heap()
     result = []
 
@@ -98,7 +104,7 @@ def heap_sort(list):
 def main():
     list = create_list_from_file("Test.txt")
 
-    result = heap_sort(list)
+    result = sort_heap(list)
 
     for i in result:
         print(i)
